@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Digital portfolio of Yeoj John I. Clavecillas, BS Information Technology student at STI College of Legazpi, aspiring Operations Engineer.">
+<title>Yeoj John Clavecillas | Digital Portfolio</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--text:#1d2433;--muted:#566176;--accent:#1f4fb4;--accent-soft:#e6edfb;--line:#d5dbe5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10141c;--card:#181e29;--text:#e8ecf3;--muted:#a3adbf;--accent:#8fb0f5;--accent-soft:#1f2a42;--line:#2a3344;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10141c;--card:#181e29;--text:#e8ecf3;--muted:#a3adbf;--accent:#8fb0f5;--accent-soft:#1f2a42;--line:#2a3344;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.65;font-size:17px}
+h1,h2,h3,nav,.tag,.label,.btn,th,.fact b,footer{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--bg);padding:10px 16px;z-index:10}
+.skip:focus{left:10px;top:10px}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+nav{display:flex;flex-wrap:wrap;gap:6px 18px;padding:18px 0;font-size:14px;border-bottom:1px solid var(--line)}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent);text-decoration:underline}
+.hero{display:flex;gap:28px;align-items:center;padding:44px 0 24px;flex-wrap:wrap}
+.avatar-img{width:124px;height:124px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);flex:none;background:var(--card)}
+h1{margin:0 0 4px;font-size:34px;line-height:1.2}
+.sub{color:var(--muted);margin:0 0 6px}
+.role{color:var(--accent);font-weight:600;font-family:-apple-system,"Segoe UI",Arial,sans-serif;font-size:15px;margin:0}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:8px 0 28px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:15px}
+.fact b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:2px}
+section{padding:30px 0;border-top:1px solid var(--line)}
+h2{font-size:22px;margin:0 0 16px}
+h3{font-size:18px;margin:0 0 4px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin-bottom:16px}
+.showcase-card{display:grid;grid-template-columns:minmax(240px,320px) 1fr;gap:20px;align-items:center}
+@media (max-width:700px){.showcase-card{grid-template-columns:1fr}}
+.media-frame{width:100%;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:var(--bg)}
+.media-frame img{display:block;width:100%;height:auto;object-fit:cover}
+.media-frame iframe{display:block;width:100%;height:240px;border:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.grid .card{margin:0}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:3px 12px;font-size:13px;margin:0 6px 6px 0}
+.label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin:14px 0 6px}
+ul{margin:6px 0 0;padding-left:20px}
+li{margin-bottom:4px}
+p{margin:0 0 12px}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:var(--bg);padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px}
+footer{padding:26px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media print{nav,.skip,.btn{display:none}body{background:#fff;color:#000}.card,.fact{border-color:#999}section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="wrap">
+<nav aria-label="Portfolio sections">
+<a href="#home">Home</a><a href="#about">About Me</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#fit">Role Fit</a><a href="#experience">Experience</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+</nav>
+
+<main id="main">
+<header class="hero" id="home">
+<img class="avatar-img" src="images/478140169_604259822408577_2946459631222892259_n.jpg" alt="Yeoj John I. Clavecillas STI College portrait">
+<div>
+<h1>Yeoj John I. Clavecillas</h1>
+<p class="sub">BS Information Technology, 4th Year &middot; STI College of Legazpi</p>
+<p class="role">Aspiring Operations Engineer</p>
+</div>
+</header>
+
+<div class="facts">
+<div class="fact"><b>Program</b>BS Information Technology</div>
+<div class="fact"><b>School</b>STI College of Legazpi</div>
+<div class="fact"><b>Year level</b>4th Year</div>
+<div class="fact"><b>Target role</b>Operations Engineer</div>
+<div class="fact"><b>Core stack</b>Python, React.js, Node.js, MySQL</div>
+</div>
+
+<p>Hello! I’m Yeoj John Clavecillas, a fourth-year BS Information Technology student at STI College of Legazpi. I enjoy building and fixing things with technology, from web applications to databases. For my capstone I helped build a web-based healthcare management system for the Barangay Dancalan Health Center, where I designed the database and worked across the full stack. That experience showed me how much a reliable system matters to the people who depend on it. I’m looking to start my career as an Operations Engineer, where I can apply my troubleshooting, database, and web skills to help keep digital services running smoothly. This portfolio brings my skills, projects, and achievements together in one place.</p>
+
+<section id="about" aria-labelledby="h-about">
+<h2 id="h-about">About Me</h2>
+<div class="grid">
+<div class="card"><h3>Background</h3><p>I’m from Tiwi, Albay, and I study at STI College of Legazpi. My coursework and projects cover web development, data analytics, and game development.</p></div>
+<div class="card"><h3>Interests &amp; Hobbies</h3><p>I enjoy PC gaming and playing Magic: The Gathering, and I have built a web project and a game around those interests.</p></div>
+<div class="card"><h3>Career Goals</h3><p>I want to work as an Operations Engineer, supporting the systems and databases that organizations rely on every day, and to keep building my skills in troubleshooting and system diagnostics.</p></div>
+<div class="card"><h3>Personal Strengths</h3><p>I adapt quickly, manage my time well, and document what I build so that others can understand and maintain it.</p></div>
+</div>
+</section>
+
+<section id="education" aria-labelledby="h-edu">
+<h2 id="h-edu">Education</h2>
+<div class="card">
+<h3>Bachelor of Science in Information Technology</h3>
+<p class="sub">STI College of Legazpi &middot; Currently in 4th year</p>
+<p>Coursework and projects in web application development, databases, data analytics, game development, and computer graphics programming.</p>
+</div>
+</section>
+
+<section id="skills" aria-labelledby="h-skills">
+<h2 id="h-skills">Skills &amp; Competencies</h2>
+<div class="card">
+<div class="label" style="margin-top:0">Programming &amp; Web</div>
+<span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">HTML/CSS</span><span class="tag">Tailwind CSS</span>
+<div class="label">Database</div>
+<span class="tag">MySQL</span><span class="tag">Database Design</span>
+<div class="label">IT Support</div>
+<span class="tag">Troubleshooting</span><span class="tag">System Diagnostics</span>
+<div class="label">Tools</div>
+<span class="tag">Git/GitHub</span><span class="tag">Visual Studio Code</span><span class="tag">Claude Code</span>
+<div class="label">Other</div>
+<span class="tag">Game Development</span>
+<div class="label">Soft Skills</div>
+<span class="tag">Time Management</span><span class="tag">Adaptability</span><span class="tag">Technical Documentation</span><span class="tag">Willingness to Learn</span>
+</div>
+</section>
+
+<section id="projects" aria-labelledby="h-proj">
+<h2 id="h-proj">Sample Works &amp; Projects</h2>
+<article class="card showcase-card">
+<div class="media-frame">
+<img src="images/917260332_1660059978993956_6039234088028319493_n.png" alt="Barangay Dancalan Health Station web application sign-in screen">
+</div>
+<div>
+<h3>Barangay Health Center Management System</h3>
+<p class="sub">Capstone Project &middot; React.js, Tailwind CSS, Node.js, MySQL</p>
+<p>A web-based system for the Barangay Dancalan Health Center that digitizes patient records, appointments, and referral forms, replacing paper-based record keeping with searchable digital records.</p>
+<div class="label">My contribution</div>
+<ul><li>Designed the database for the system.</li><li>Helped design and build the interface and connect it to the back-end services.</li><li>Contributed to the capstone paper, including the Agile development methodology sections.</li></ul>
+<div class="label">Skills demonstrated</div>
+<span class="tag">Full-Stack Development</span><span class="tag">Database Design</span><span class="tag">Technical Writing</span><span class="tag">Working with a Real Client</span>
+</div>
+</article>
+
+<article class="card showcase-card">
+<div class="media-frame">
+<img src="images/8dc7d692-223b-425d-bfaf-46baea64cb78.jpg" alt="Learn Magic: The Gathering interactive tutorial website screen">
+</div>
+<div>
+<h3>MTG Beginner Tutorial Website</h3>
+<p class="sub">Personal Project &middot; Built in Visual Studio</p>
+<p>A beginner-friendly website that teaches new players how to play Magic: The Gathering, built from the front end through to the back end.</p>
+<div class="label">Skills demonstrated</div>
+<span class="tag">Front-End Development</span><span class="tag">Back-End Development</span><span class="tag">Content Organization</span>
+</div>
+</article>
+
+<article class="card">
+<h3>Unity 3D Game Project</h3>
+<p class="sub">IT2107 Task Performance 1</p>
+<p>A 3D game built in Unity for a course requirement, then built and submitted to the instructor.</p>
+<div class="label">Skills demonstrated</div>
+<span class="tag">Game Development</span><span class="tag">Unity</span><span class="tag">Building and Delivering a Project</span>
+</article>
+</section>
+
+<section id="fit" aria-labelledby="h-fit">
+<h2 id="h-fit">Fit for an Operations Engineer Role</h2>
+<div class="card scroll">
+<table>
+<thead><tr><th scope="col">What the role needs</th><th scope="col">What I bring</th></tr></thead>
+<tbody>
+<tr><th scope="row">Database upkeep</th><td>Designed the MySQL database for my capstone system and know how patient and appointment data is structured.</td></tr>
+<tr><th scope="row">Troubleshooting</th><td>Skilled in troubleshooting and system diagnostics, and used to fixing problems across the front end, back end, and database.</td></tr>
+<tr><th scope="row">Understanding applications</th><td>Built a full-stack application with React.js, Node.js, and MySQL, so I know how its layers connect.</td></tr>
+<tr><th scope="row">Version control</th><td>Use Git and GitHub to manage and track project changes.</td></tr>
+<tr><th scope="row">Documentation</th><td>Wrote sections of a capstone paper, including the Agile development methodology.</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="experience" aria-labelledby="h-exp">
+<h2 id="h-exp">Experience</h2>
+<div class="card">
+<h3>Capstone Project: Database Designer and Developer</h3>
+<p class="sub">Barangay Dancalan Health Center (real client)</p>
+<ul><li>Designed the database that stores patient records, appointments, and referral forms.</li><li>Took part in full-stack web development for a real client.</li><li>Helped document the project in the capstone paper.</li></ul>
+</div>
+<p class="sub">I do not yet have formal work experience, and I’m eager to gain it through hands-on, real-world work.</p>
+</section>
+
+<section id="achievements" aria-labelledby="h-ach">
+<h2 id="h-ach">Academic Achievements</h2>
+<div class="card showcase-card">
+<div class="media-frame">
+<iframe src="images/certificate.pdf" title="Oracle Academy Award of Course Completion in Java Fundamentals"></iframe>
+</div>
+<div>
+<h3>Java Fundamentals Professional Certification</h3>
+<p class="sub">STI College / Oracle Academy &middot; Completed 19th June 2024</p>
+<p>Award of Course Completion presented to Yeoj John Clavecillas for satisfactory completion of all coursework in Java Fundamentals (Instructor: Beronika Peña).</p>
+<p><a href="images/certificate.pdf" target="_blank" rel="noopener">View full certificate (PDF)</a></p>
+</div>
+</div>
+</section>
+
+<section id="contact" aria-labelledby="h-contact">
+<h2 id="h-contact">Contact Information</h2>
+<div class="card">
+<p>I’m open to opportunities in IT operations and support. Please get in touch by email.</p>
+<p><strong>Email:</strong> <a href="mailto:yeojjohnclavecillas@gmail.com">yeojjohnclavecillas@gmail.com</a><br><strong>Location:</strong> Tiwi, Albay, Philippines</p>
+<a class="btn" href="mailto:yeojjohnclavecillas@gmail.com">Send me an email</a>
+</div>
+</section>
+</main>
+
+<footer>&copy; 2026 Yeoj John I. Clavecillas &middot; BS Information Technology, STI College of Legazpi</footer>
+</div>
+</body>
+</html>
